@@ -1,11 +1,9 @@
-public class Main {
+public class Main{
   public static void main(String[] args){
-    boolean tenki = true;
-    if (tenki == false) {
-      System.out.println("洗濯をします");
-      System.out.println("散歩にいきます");
-    } else {
-      System.out.println("DVDをみます");
+    boolean doorClose = false;
+    while (doorClose == true) {
+      System.out.println("ノックする");
+      System.out.println("１分待つ");
     }
   }
 }
