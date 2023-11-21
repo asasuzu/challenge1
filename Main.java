@@ -1,16 +1,19 @@
 public class Main{
-  public static void main(String[] args) {
-    int [] score = new int [3];
-    score[0] = 80;
-    score[1] = 100;
-    score[2] = 75;
+  public static void main(String[] args){
+    int price = Integer.parseInt(args[0]);
+    double rate = 0.10;
+    int discount, amount;
     
-    String[] name = {"菅原", "村山", "寺島"};
+    if (price >= 5000 ){
+      discount = 500;
+    } else if (price >= 3000) {
+      discount = 300;
+    } else {
+      discount = 0;
+    }
     
-    System.out.println(name[0] + "さん:" + score[0] + "点");
-    System.out.println(name[1] + "さん:" + score[1] + "点");
-    System.out.println(name[2] + "さん:" + score[2] + "点");
-    System.out.println("受験者数:" + score.length + "名");
-
+    amount = (int)((price - discount) * (1 + rate));
+    System.out.println("値引き金額：" + discount + "円");
+    System.out.println("税込金額：" + amount + "円");
   }
 }
