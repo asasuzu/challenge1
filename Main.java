@@ -1,19 +1,18 @@
-public class Main{
-  public static void main(String[] args){
-    int price = Integer.parseInt(args[0]);
-    double rate = 0.10;
-    int discount, amount;
-    
-    if (price >= 5000 ){
-      discount = 500;
-    } else if (price >= 3000) {
-      discount = 300;
-    } else {
-      discount = 0;
+public class Main {
+  public static void main(String[] args) {
+    int data = 50;
+    switch (data) {
+      case 60:
+        System.out.println("C");
+        break;
+      case 70:
+        System.out.println("B");
+        break;
+      case 80:
+        System.out.println("A");
+        break;
+      default:
+        System.out.println("D");
     }
-    
-    amount = (int)((price - discount) * (1 + rate));
-    System.out.println("値引き金額：" + discount + "円");
-    System.out.println("税込金額：" + amount + "円");
   }
 }
