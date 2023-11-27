@@ -1,18 +1,9 @@
 public class Main {
   public static void main(String[] args) {
-    int data = 50;
-    switch (data) {
-      case 60:
-        System.out.println("C");
-        break;
-      case 70:
-        System.out.println("B");
-        break;
-      case 80:
-        System.out.println("A");
-        break;
-      default:
-        System.out.println("D");
+    int score[] = { 80, 75, 100, 90, 80 };
+    String label[] = { "Tom", "John", "Mary", "Ken", "Jimmy" };
+    for (int i = 0; i< score.length; i++) {
+      System.out.println(label[i] + "'s score is" + score[i]);
     }
   }
 }
