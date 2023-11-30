@@ -1,9 +1,12 @@
 public class Main {
-  public static void main(String[] args) {
-    int score[] = { 80, 75, 100, 90, 80 };
-    String label[] = { "Tom", "John", "Mary", "Ken", "Jimmy" };
-    for (int i = 0; i< score.length; i++) {
-      System.out.println(label[i] + "'s score is" + score[i]);
+  public static void main(String[] args){
+    int[] numbers = {3,4,9};
+    System.out.println("1桁の数字を入力してください");
+    int input = new java.util.Scanner(System.in).nextInt();
+    for (int n:numbers){
+      if(n == input) {
+        System.out.println("あたり");
+      }
     }
   }
 }
